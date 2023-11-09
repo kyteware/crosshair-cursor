@@ -17,8 +17,10 @@ jobs:
           # Fetch history to add correct version in Makefile
           fetch-depth: 0
       - name: Build cursors
-        run: sh gen.sh
+        run: |
+          sh gen.sh
+          tar -zcvf crosshair-cursors.tar.gz crosshair-cursors
       - name: Publish release
         uses: ncipollo/release-action@v1
         with:
-          artifacts: "crosshair-cursors"
+          artifacts: "crosshair-cursors.tar.gz"
