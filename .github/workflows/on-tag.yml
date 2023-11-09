@@ -6,19 +6,18 @@ on:
       - v*
 
 jobs:
-  upload:
+  build:
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
           # Fetch history to add correct version in Makefile
           fetch-depth: 0
-
       - name: Build cursors
         run: sh gen.sh
-
       - name: Publish release
         uses: ncipollo/release-action@v1
         with:
