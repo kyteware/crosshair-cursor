@@ -17,7 +17,7 @@ jobs:
           # Fetch history to add correct version in Makefile
           fetch-depth: 0
       - name: Install dependencies
-        run: apt-get install x11-apps
+        run: sudo apt-get install x11-apps
       - name: Build cursors
         run: |
           sh gen.sh
