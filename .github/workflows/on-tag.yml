@@ -23,4 +23,3 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
           artifacts: "crosshair-cursors"
-          token: ${{ secrets.GITHUB_TOKEN }}
