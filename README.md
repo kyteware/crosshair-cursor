@@ -6,3 +6,8 @@ I can't figure out how to take a screenshot with my cursor in it, but here are t
 ![active](img/active.png)
 ![default](img/default.png)
 ![problem](img/problem.png)
+
+## Usage
+
+1. Go to the [latest release](https://github.com/Dworv/crosshair-cursor/releases/tag/v0.5) in the releases tab and download `crosshair-cursors.tar.gz` from the latest release.
+2. Unzip the file into `~/.icons` or  `/usr/share/icons`
