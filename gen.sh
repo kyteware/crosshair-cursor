@@ -1,5 +1,5 @@
 # ensure working dir
-if ! test -f gen.bash; then
+if ! test -f gen.sh; then
     echo "script must be run in root of repo"
     exit 1
 fi
